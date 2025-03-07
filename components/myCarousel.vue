@@ -1,11 +1,20 @@
 <template>
-  <div class="h-[1200px] z-5">
-    <div class="w-full bg-slate-200 z-5"></div>
+  <div >
+    <div class="w-full bg-slate-200"></div>
 
-    <Carousel :items-to-show="1" :wrap-around="true">
-      <Slide v-for="slide in 2" :key="slide">
-        <div class="carousel__item w-full h-[400px]">
-          <img class="w-full h-full object-cover border-black" src="/img/minecraftShaders1.PNG" />
+    <Carousel
+      :items-to-show="1"
+      :wrap-around="true"
+      :transition="800"
+      :autoplay="10000"
+      :mouse-drag="false"
+      :touch-drag="false"
+      :keyboard="false"
+      class="w-full h-[400px]"
+    >
+      <Slide v-for="(shader, index) in shaders" :key="index">
+        <div class="w-full h-full">
+          <img class="w-full h-full object-cover border-black" :src="shader" />
         </div>
       </Slide>
 
@@ -15,33 +24,39 @@
       </template>
     </Carousel>
   </div>
+  <img src="/img/logo.png" alt="Genesis" class="absolute top-32 left-1/2 transform -translate-x-1/2 z-10 w-[500px]" />
+
 </template>
 
-<script>
-import { defineComponent } from 'vue'
-import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
-
+<script setup>
+import { ref } from 'vue'
+import { Carousel, Slide, Navigation, Pagination } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
-export default defineComponent({
-  name: 'Basic',
-  components: {
-    Carousel,
-    Slide,
-    Pagination,
-    Navigation,
-  },
-})
+const shaders = ref([
+  "/img/minecraftShaders1.PNG",
+  "/img/minecraftShaders2.PNG",
+  "/img/minecraftShaders3.PNG",
+])
 </script>
 
 <style>
-.carousel__slide {
-  @apply bg-white;
-}
-
+/* Agrandir les flèches */
 .carousel__prev,
 .carousel__next {
-  box-sizing: content-box;
-  border: 5px solid white;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+}
+
+/* Agrandir les boutons de pagination */
+.carousel__pagination-button {
+  width: 40px;
+  height: 8px;
+}
+
+/* Supprimer la flèche directionnelle en bas */
+.carousel__icons {
+  display: none;
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
   <div>
 
-  <div class="absolute inset-0 overflow-hidden hidden md:block">
-  <div class="fixed overflow-hiddentop-0 left-0 w-full flex justify-center items-center z-0">
-    <div class="flex backdrop-blur-md bg-purple-100 rounded-b-xl bg-opacity-30 border-b h-20 border-gray-200 dark:border-gray-700">
+    <div class="absolute overflow-hidden hidden md:block">
+      <div class="fixed top-0 left-0 w-full flex justify-center items-center z-50">
+    <div class="flex backdrop-blur-md bg-purple-100 rounded-b-xl bg-opacity-30 border-b h-16 border-gray-200 dark:border-gray-700">
 
 
     <NuxtLink to="/vote" class="flex items-center h-15 px-2 py-2 -mb-px text-center text-black bg-transparent border-b-2 border-transparent md:px-5 -px-1 dark:text-white whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400">
@@ -66,7 +66,7 @@
 
   </div>
 </div>
-</div>
+    </div>
 
 <div class="fixed top-4 right-4">
       <div class=" justify-end md:hidden">
@@ -120,7 +120,7 @@
   </TransitionRoot>
 
 
-    <div class="pt-10">
+    <div class="pt-16">
       <NuxtPage />
     </div>
   </div>
