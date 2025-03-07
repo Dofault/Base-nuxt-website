@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/kinde'],
+  modules: ['@nuxtjs/kinde', '@nuxtjs/tailwindcss', '@nuxt/image', 'vue3-carousel-nuxt'],
   kinde: {
     // This is true by default and adds 'auth-logged-in' and 'auth-logged-out'
     // middleware to your Nuxt application.

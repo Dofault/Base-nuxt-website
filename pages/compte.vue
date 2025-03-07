@@ -1,5 +1,6 @@
 <template>
-    Tu es connecté
+    Tu es connecté :
+    {{ $auth.user }}
 </template>
 
 <script>
