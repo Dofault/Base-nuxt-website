@@ -8,15 +8,12 @@
     <div class="w-full bg-slate-200"></div>
 
     <Carousel
-      :items-to-show="1"
-      :wrap-around="true"
       :transition="1200"
       dir="ttb"
       :autoplay="10000"
       :mouse-drag="false"
       :touch-drag="false"
-      :keyboard="false"
-      class="w-full h-[919px]"
+      class="h-[919px]"
     >
     <Slide v-for="(shader, index) in shaders" :key="index">
   <div class="w-full h-full relative">
