@@ -42,9 +42,9 @@
       <div class="relative max-[450px]:top-[-770px] max-[540px]:top-[-870px] max-[620px]:top-[-920px] top-[-930px] md:top-[-1000px] xl:top-[-340px]">
   <div class="flex relative xl:flex-row flex-col">
 
-    <div class="relative xl:left-[-30px] h-[250px] xl:w-[310px] text-white my-5 rounded-lg xl:rounded-l-[40px]">
-      <NuxtImg src="img/minecraftShaders1.png" width="310" height="250" class="rounded-lg xl:rounded-l-[40px] object-cover"/>
-      <div class="absolute bottom-0 left-0 w-full h-3/4 bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-transparent flex items-end justify-center rounded-lg xl:rounded-l-[40px]">
+    <div class="relative xl:left-[-30px] h-[250px] xl:w-[310px] text-white my-5 xl:mx-2 xl:rounded-l-[40px]">
+      <NuxtImg src="img/minecraftShaders1.png" width="310" height="250" class="object-cover xl:rounded-l-[40px]"/>
+      <div class="absolute bottom-0 left-0 w-full h-3/4 bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-transparent flex items-end justify-center xl:rounded-l-[40px]">
         <div class="text-white text-[25px] mb-2 text-center leading-9 mx-10">
           Une nouvelle maison va vite spawn venez
         </div>
@@ -61,7 +61,7 @@
     </div>
 
     <div class="relative xl:right-[-30px] h-[250px] xl:w-[310px] text-white my-5 xl:mx-2 xl:rounded-r-[40px]">
-      <NuxtImg src="img/minecraftShaders3.png" width="310" height="250" class="xl:rounded-r-[40px] object-cover"/>
+      <NuxtImg src="img/minecraftShaders3.png" width="310" height="250" class="object-cover xl:rounded-r-[40px]"/>
       <div class="absolute bottom-0 left-0 w-full h-3/4 bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-transparent flex items-end justify-center xl:rounded-r-[40px]">
         <div class="text-white text-[25px] mb-2 text-center leading-9 mx-10">
           Une nouvelle maison va vite spawn venez
