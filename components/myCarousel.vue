@@ -5,31 +5,17 @@
 
 
   <div >
-    <div class="w-full bg-slate-200"></div>
-
-    <Carousel
-      :transition="1200"
-      dir="ttb"
-      :autoplay="10000"
-      :mouse-drag="false"
-      :touch-drag="false"
-      class="h-[919px]"
-    >
-    <Slide v-for="(shader, index) in shaders" :key="index">
-  <div class="w-full h-full relative">
-    <!-- Image -->
-    <img class="w-full h-full object-cover border-black" :src="shader" />
-    
-    <!-- Dégradé sombre transparent au top -->
-    <div class="absolute bottom-0 left-0 w-full h-[50%] bg-gradient-to-b from-transparent to-[rgba(0,0,0,0.5)]"></div>
-  </div>
-</Slide>
-
-      <template #addons>
-        <Navigation />
-        <Pagination />
-      </template>
-    </Carousel>
+    <div class="w-full h-[900px] bg-black">
+      <v-carousel height="900" progress="primary" hide-delimiters>
+    <v-carousel-item v-for="(image, index) in shaders" :key="index">
+      <v-sheet height="100%">
+        <div class="d-flex fill-height justify-center align-center">
+          <img :src="image" class="object-cover w-full h-full" alt="Shader Image" />
+        </div>
+      </v-sheet>
+    </v-carousel-item>
+  </v-carousel>
+</div>
   </div>
 
 
@@ -120,7 +106,10 @@ const shaders = ref([
   "/img/minecraftShaders1.PNG",
   "/img/minecraftShaders2.PNG",
   "/img/minecraftShaders3.PNG",
-])
+]);
+
+
+
 </script>
 
 <style>
