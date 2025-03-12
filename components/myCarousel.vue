@@ -1,4 +1,9 @@
 <template>
+
+
+<div class="bg-[#1F2833] bg-opacity-60 max-[450px]:h-[1230px] max-[540px]:h-[1330px] max-[620px]:h-[1430px]  h-[1500px] md:h-[1600px] xl:h-[950px] ">
+
+
   <div >
     <div class="w-full bg-slate-200"></div>
 
@@ -31,19 +36,64 @@
   </div>
 
 
-  <div class="absolute top-[150px] left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center space-y-8">
+  <div class="absolute top-[130px] left-1/2 transform -translate-x-1/2 z-10 flex flex-col items-center ">
       
       <!-- Logo -->
-      <img src="/img/logo.png" alt="Genesis" class="w-[300px] md:w-[500px]" />
+      <img src="/img/logo.png" alt="Genesis" class="w-[500px] md:w-[500px] " />
 
 
       <!-- Clipboard -->
       <Clipboard />
       
-      <div class="backdrop-contrast-125-90 bg-white rounded-xl flex items-center justify-center text-center text-black text-3xl">
+      <div class="backdrop-contrast-125-90 mt-10 bg-opacity-80 w-full pt-5  max-[450px]:h-[830px] max-[540px]:h-[930px]  max-[620px]:h-[980px] max-w-[600px] h-[1000px] md:h-[1050px] xl:h-[400px] bg-[#1F2833] rounded-[30px] md:rounded-[50px] items-top justify-center  text-white text-3xl">
+        <div class="w-full text-center text-[35px]">
+          Actualités
 
-        fdsqfds
+        </div>
+
+
+
+        
       </div>
+
+      <div class="relative max-[450px]:top-[-770px] max-[540px]:top-[-870px] max-[620px]:top-[-920px] top-[-930px] md:top-[-1000px] xl:top-[-340px]">
+  <div class="flex relative xl:flex-row flex-col">
+
+    <div class="relative xl:left-[-30px] xl:w-[310px] text-white my-5 rounded-lg xl:rounded-l-[40px]">
+      <NuxtImg src="img/minecraftShaders1.png" width="310" height="250" class="rounded-lg xl:rounded-l-[40px] object-cover"/>
+      <div class="absolute bottom-0 left-0 w-full h-3/4 bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-transparent flex items-end justify-center rounded-lg xl:rounded-l-[40px]">
+        <div class="text-white text-[25px] mb-2 text-center leading-9 mx-10">
+          Une nouvelle maison va vite spawn venez
+        </div>
+      </div>
+    </div>
+
+    <div class="relative xl:w-[310px] text-white my-5 rounded-lg">
+      <NuxtImg src="img/minecraftShaders2.png" width="310" height="250" class="rounded-lg object-cover"/>
+      <div class="absolute bottom-0 left-0 w-full h-3/4 bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-transparent flex items-end justify-center rounded-lg">
+        <div class="text-white text-[25px] mb-2 text-center leading-9 mx-10">
+          Une nouvelle maison va vite spawn venez
+        </div>
+      </div>
+    </div>
+
+    <div class="relative xl:right-[-30px] xl:w-[310px] text-white my-5 xl:mx-2 xl:rounded-r-[40px]">
+      <NuxtImg src="img/minecraftShaders3.png" width="310" height="250" class="xl:rounded-r-[40px] object-cover"/>
+      <div class="absolute bottom-0 left-0 w-full h-3/4 bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-transparent flex items-end justify-center xl:rounded-r-[40px]">
+        <div class="text-white text-[25px] mb-2 text-center leading-9 mx-10">
+          Une nouvelle maison va vite spawn venez
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+    <div class="text-center text-white text-[25px]">
+        Voir plus
+
+      </div>
+</div>
 
       <!-- Discord Button -->
       <!-- <button class="button x">
@@ -57,7 +107,7 @@
 
 
 
-
+  </div>
 
 
 
