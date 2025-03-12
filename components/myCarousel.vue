@@ -6,15 +6,15 @@
 
   <div >
     <div class="w-full h-[900px] bg-black">
-      <v-carousel height="900" progress="primary" hide-delimiters>
-    <v-carousel-item v-for="(image, index) in shaders" :key="index">
-      <v-sheet height="100%">
-        <div class="d-flex fill-height justify-center align-center">
-          <img :src="image" class="object-cover w-full h-full" alt="Shader Image" />
-        </div>
-      </v-sheet>
-    </v-carousel-item>
-  </v-carousel>
+      <v-carousel height="900" progress="primary" hide-delimiters cycle interval="10000" :show-arrows="false">
+        <v-carousel-item v-for="(image, index) in shaders" :key="index" >
+          <v-sheet height="100%">
+            <div class="d-flex fill-height justify-center align-center">
+              <img :src="image" class="object-cover w-full h-full" alt="Shader Image" />
+            </div>
+          </v-sheet>
+        </v-carousel-item>
+      </v-carousel>
 </div>
   </div>
 
