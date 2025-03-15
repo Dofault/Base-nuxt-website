@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   auth: {
     isEnabled: true,
     disableServerSideAuth: false,
-    baseURL: 'http://localhost:3000/api/auth',
+    baseURL: process.env.baseURL,
     sessionRefresh: {
       enablePeriodically: true,
       enableOnWindowFocus: true,
