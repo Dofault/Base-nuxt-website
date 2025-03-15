@@ -31,6 +31,7 @@ const demoCredentials = { username: 'test', password: 'hunter2' }
 
   <div v-if="data">
     Hello {{ data.user.name }}!
+    
   </div>
   <div v-else>
     You are not logged in.
