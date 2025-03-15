@@ -46,21 +46,21 @@
         </button>
 
 
-      <LoginLink v-if="!$auth.loggedIn" to="/api/login" class="flex items-center h-15 px-2 py-2 -mb-px text-center text-white bg-transparent border-b-2 border-transparent md:px-5 -px-1 dark:text-white whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400">
+      <Button v-if="!data" @click="signIn('azure-ad')" class="flex items-center h-15 px-2 py-2 -mb-px text-center text-white bg-transparent border-b-2 border-transparent md:px-5 -px-1 dark:text-white whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400">
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mx-1 sm:w-8 sm:h-8">
           <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
         </svg>
-        <span class="mx-2 text-sm sm:text-xl"> Connexion </span>
-      </LoginLink>
-      <LoginLink v-if="$auth.loggedIn" to="/api/logout" class="flex items-center h-15 px-2 py-2 -mb-px text-center text-black bg-transparent border-b-2 border-transparent md:px-5 -px-1 dark:text-white whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400">
+        <span class="mx-2 text-sm sm:text-xl" > Connexion </span>
+      </Button>
+      <Button v-if="data" @click="() => signOut({ callbackUrl: '/' })" class="flex items-center h-15 px-2 py-2 -mb-px text-center text-black bg-transparent border-b-2 border-transparent md:px-5 -px-1 dark:text-white whitespace-nowrap cursor-base focus:outline-none hover:border-gray-400">
 
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mx-1 sm:w-8 sm:h-8">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>
 
       <span class="mx-2 text-sm sm:text-xl"> Deconnexion </span>
-      </LoginLink>
+      </Button>
 
   </div>
       </div>
@@ -120,7 +120,8 @@
 
 import { ref } from 'vue'
 import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
-import { XMarkIcon } from '@heroicons/vue/24/outline'
+const { signIn, status, data, signOut , getSession   } = useAuth()
+
 const navBar = ref(false);
 
 const open = ref(false);

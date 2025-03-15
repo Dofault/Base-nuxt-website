@@ -8,7 +8,17 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'vue3-carousel-nuxt',
     'vuetify-nuxt-module',
+    '@sidebase/nuxt-auth'
   ],
+  auth: {
+    isEnabled: true,
+    disableServerSideAuth: false,
+    baseURL: 'http://localhost:3000/api/auth',
+    sessionRefresh: {
+      enablePeriodically: true,
+      enableOnWindowFocus: true,
+    }
+  },
   kinde: {
     // This is true by default and adds 'auth-logged-in' and 'auth-logged-out'
     // middleware to your Nuxt application.
