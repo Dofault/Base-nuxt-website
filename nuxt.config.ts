@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   auth: {
     isEnabled: true,
     disableServerSideAuth: false,
-    baseURL: process.env.NODE_ENV === 'production' ? 'https://gardeniaa.netlify.app/' : 'http://localhost:3000',
+    baseURL: process.env.NODE_ENV === 'production' ? 'https://gardeniaa.netlify.app/api/auth' : 'http://localhost:3000/api/auth',
     sessionRefresh: {
       enablePeriodically: true,
       enableOnWindowFocus: true,
