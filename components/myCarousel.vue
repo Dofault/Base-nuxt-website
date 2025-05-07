@@ -10,7 +10,7 @@
         <v-carousel-item v-for="(image, index) in shaders" :key="index" >
           <v-sheet height="100%">
             <div class="d-flex fill-height justify-center align-center">
-              <NuxtImg :custom="true" preload :src="image" class="object-cover w-full h-full" alt="Shader Image" />
+              <NuxtImg class="object-cover w-full h-full" alt="Shader Image" />
             </div>
           </v-sheet>
         </v-carousel-item>
@@ -71,7 +71,7 @@
     xl:rounded-l-[40px]
     
     ">
-      <NuxtImg :custom="true" src="img/minecraftShaders1.png" class="object-cover h-full 
+      <NuxtImg src="img/minecraftShaders1.png" class="object-cover h-full 
       
       max-xl:rounded-3xl
       xl:rounded-l-[40px]
@@ -95,7 +95,7 @@
 
     
     ">
-      <NuxtImg :custom="true" src="img/minecraftShaders2.png" class="object-cover h-full 
+      <NuxtImg src="img/minecraftShaders2.png" class="object-cover h-full 
       
       max-xl:rounded-3xl
       
@@ -119,7 +119,7 @@
     xl:rounded-r-[40px]
     
     ">
-      <NuxtImg :custom="true" src="img/minecraftShaders3.png" class="object-cover h-full 
+      <NuxtImg src="img/minecraftShaders3.png" class="object-cover h-full 
       
       max-xl:rounded-3xl
       xl:rounded-r-[40px]
