@@ -74,7 +74,10 @@
     xl:rounded-l-[40px]
     
     ">
-      <NuxtImg src="img/minecraftShaders1.png" class="object-cover h-full 
+      <NuxtImg src="img/minecraftShaders1.png"                 
+      width="480"
+      height="270"
+      class="object-cover h-full 
       
       max-xl:rounded-3xl
       xl:rounded-l-[40px]
@@ -98,7 +101,10 @@
 
     
     ">
-      <NuxtImg src="img/minecraftShaders2.png" class="object-cover h-full 
+      <NuxtImg src="img/minecraftShaders2.png" 
+            width="480"
+      height="270"
+      class="object-cover h-full 
       
       max-xl:rounded-3xl
       
@@ -122,7 +128,11 @@
     xl:rounded-r-[40px]
     
     ">
-      <NuxtImg src="img/minecraftShaders3.png" class="object-cover h-full 
+      <NuxtImg 
+                  width="480"
+      height="270"
+      
+      src="img/minecraftShaders3.png" class="object-cover h-full 
       
       max-xl:rounded-3xl
       xl:rounded-r-[40px]
