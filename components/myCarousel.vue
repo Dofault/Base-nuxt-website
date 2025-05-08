@@ -10,7 +10,7 @@
         <v-carousel-item v-for="(image, index) in shaders" :key="index" >
           <v-sheet height="100%">
             <div class="d-flex fill-height justify-center align-center">
-              <NuxtImg class="object-cover w-full h-full" alt="Shader Image" />
+              <img :src="image" class="object-cover w-full h-full" alt="Shader Image" />
             </div>
           </v-sheet>
         </v-carousel-item>
